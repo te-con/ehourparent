@@ -5,6 +5,7 @@
     <groupId>nl.tecon.ehour</groupId>
     <version>1.0.0-SNAPSHOT</version>
     <artifactId>eHour-parent</artifactId>
+
     <packaging>pom</packaging>
     <name>eHour</name>
     <url>http://www.getehour.com/</url>
@@ -49,6 +50,8 @@
     </developers>
 
     <properties>
+        <ehour.version>1.4.1</ehour.version>
+
         <spring.version>4.1.1.RELEASE</spring.version>
         <wicket.version>6.17.0</wicket.version>
         <jetty.version>8.1.14.v20131031</jetty.version>
@@ -95,6 +98,7 @@
                 <artifactId>servlet-api</artifactId>
                 <version>2.5</version>
             </dependency>
+
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
@@ -438,43 +442,45 @@
             <dependency>
                 <groupId>net.rrm.ehour</groupId>
                 <artifactId>eHour-persistence</artifactId>
-                <version>${project.version}</version>
+                <version>${ehour.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>net.rrm.ehour</groupId>
-                <artifactId>eHour-persistence-derby</artifactId>
-                <version>${project.version}</version>
+                <artifactId>eHour-persistence</artifactId>
+                <version>${ehour.version}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
             </dependency>
 
             <dependency>
                 <groupId>net.rrm.ehour</groupId>
                 <artifactId>eHour-persistence-mysql</artifactId>
-                <version>${project.version}</version>
+                <version>${ehour.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>net.rrm.ehour</groupId>
                 <artifactId>eHour-persistence-postgresql</artifactId>
-                <version>${project.version}</version>
+                <version>${ehour.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>net.rrm.ehour</groupId>
                 <artifactId>eHour-common</artifactId>
-                <version>${project.version}</version>
+                <version>${ehour.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>net.rrm.ehour</groupId>
                 <artifactId>eHour-standalone</artifactId>
-                <version>${project.version}</version>
+                <version>${ehour.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>net.rrm.ehour</groupId>
                 <artifactId>eHour-common</artifactId>
-                <version>${project.version}</version>
+                <version>${ehour.version}</version>
                 <type>test-jar</type>
                 <scope>test</scope>
             </dependency>
@@ -482,25 +488,33 @@
             <dependency>
                 <groupId>net.rrm.ehour</groupId>
                 <artifactId>eHour-service</artifactId>
-                <version>${project.version}</version>
+                <version>${ehour.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>net.rrm.ehour</groupId>
                 <artifactId>eHour-wicketweb</artifactId>
-                <version>${project.version}</version>
+                <version>${ehour.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.rrm.ehour</groupId>
+                <artifactId>eHour-wicketweb</artifactId>
+                <version>${ehour.version}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
             </dependency>
 
             <dependency>
                 <groupId>net.rrm.ehour</groupId>
                 <artifactId>eHour-audit</artifactId>
-                <version>${project.version}</version>
+                <version>${ehour.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>net.rrm.ehour</groupId>
                 <artifactId>eHour-common</artifactId>
-                <version>${project.version}</version>
+                <version>${ehour.version}</version>
                 <scope>test</scope>
                 <classifier>tests</classifier>
             </dependency>
@@ -586,10 +600,6 @@
             <artifactId>log4j</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.easymock</groupId>
-            <artifactId>easymock</artifactId>
-        </dependency>
         <dependency>
             <groupId>xerces</groupId>
             <artifactId>xercesImpl</artifactId>
