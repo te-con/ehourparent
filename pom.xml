@@ -488,6 +488,12 @@
 
             <dependency>
                 <groupId>net.rrm.ehour</groupId>
+                <artifactId>eHour-service-port</artifactId>
+                <version>${ehour.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.rrm.ehour</groupId>
                 <artifactId>eHour-wicketweb</artifactId>
                 <version>${ehour.version}</version>
             </dependency>
