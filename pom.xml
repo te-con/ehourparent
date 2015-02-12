@@ -50,7 +50,7 @@
     </developers>
 
     <properties>
-        <ehour.version>1.4.1</ehour.version>
+        <ehour.version>1.4.2-SNAPSHOT</ehour.version>
 
         <spring.version>4.1.1.RELEASE</spring.version>
         <wicket.version>6.18.0</wicket.version>
@@ -509,7 +509,6 @@
                 <artifactId>eHour-jetty</artifactId>
                 <version>${ehour.version}</version>
             </dependency>
-
 
             <dependency>
                 <groupId>net.rrm.ehour</groupId>
