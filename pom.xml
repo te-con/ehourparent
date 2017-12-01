@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>nl.tecon.ehour</groupId>
-    <version>1.2-SNAPSHOT</version>
+    <version>1.2</version>
     <artifactId>eHour-parent</artifactId>
 
     <packaging>pom</packaging>
@@ -17,7 +17,7 @@
         <url>http://github.com/te-con/ehourparent.git</url>
         <connection>scm:git:ssh://git@github.com/te-con/ehourparent.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/te-con/ehourparent.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>eHour-parent-1.2</tag>
   </scm>
 
     <issueManagement>
