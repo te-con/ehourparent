@@ -892,14 +892,13 @@
 
     <distributionManagement>
         <repository>
-            <id>releases</id>
-            <url>http://nexus.te-con.nl/content/repositories/releases</url>
+            <id>nexus</id>
+            <url>https://nexus.te-con.com/repository/maven-releases/</url>
         </repository>
 
         <snapshotRepository>
-            <id>snapshots</id>
-            <name>Internal Snapshots</name>
-            <url>http://nexus.te-con.nl/content/repositories/snapshots</url>
+            <id>nexus</id>
+            <url>https://nexus.te-con.com/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
