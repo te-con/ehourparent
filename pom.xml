@@ -55,7 +55,7 @@
         <spring.version>4.3.28.RELEASE</spring.version>
         <wicket.version>6.30.0</wicket.version>
         <jetty.version>8.2.0.v20160908</jetty.version>
-        <derbydb.version>10.12.1.1</derbydb.version>
+        <derbydb.version>10.14.2.0</derbydb.version>
         <aspectj.version>1.8.4</aspectj.version>
         <slf4j.version>1.6.4</slf4j.version>
         <hibernate.version>4.3.11.Final</hibernate.version>
